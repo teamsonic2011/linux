@@ -33,9 +33,9 @@ module_param(cards_limit, int, 0444);
 MODULE_PARM_DESC(cards_limit, "Count of auto-loadable soundcards.");
 MODULE_ALIAS_CHARDEV_MAJOR(CONFIG_SND_MAJOR);
 
-/* this one holds the actual max. card number currently available.
- * as default, it's identical with cards_limit option.  when more
- * modules are loaded manually, this limit number increases, too.
+/* this one holds the actual maximum soundcard number currently available.
+ * by default, it's identical with cards_limit option.  when more
+ * modules are loaded manually, this limit increases, too.
  */
 int snd_ecards_limit;
 EXPORT_SYMBOL(snd_ecards_limit);
